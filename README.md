@@ -15,14 +15,16 @@ Todos los lavados cumplen con el siguiente ciclo:
 * `prepararLavado():` Indicará por pantalla que comenzó la carga de agua.
 
 * `iniciarLavado():` Indicara por pantalla que el ciclo de peparacion termino y comienza el lavado en el tiempo establecido
- en el `TipoDeLavado`.
+ en el **TipoDeLavado**.
  
 * `comenzarEnjuague():` Indicará por pantalla que el enjuague comenzó.
       
-* `centrifugar():` Indicara por pantalla que el enjuague terminó y que comenzara el ciclo de enjuaje indicado en el `TipoDeLavado`
+* `centrifugar():` Indicara por pantalla que el enjuague terminó y que comenzara el ciclo de centrifugado indicado en el **TipoDeLavado**
 
 
 ### Tipos de lavado
+
+Cada tipo de lavado tendra un **tiempo** y un **tipo de centrifugado** establecido acontinuacion:
 
 * `lavadoNormal():` Este lavado durará `30 minutos` y tendra un ciclo de centrifugado `suave`.
 

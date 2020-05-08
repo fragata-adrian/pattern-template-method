@@ -13,23 +13,26 @@ enjuague y secado.
 
 Todos los lavados cumplen con el siguiente ciclo:
 
-* `prepararLavado():` Indicará por pantalla que comenzó la carga de agua.
+* `prepararLavado():` Indica por pantalla que comenzó la carga de agua.
 
-* `iniciarLavado():` Indicara por pantalla que el ciclo de preparación termino y comienza el lavado en el tiempo establecido
- en el **TipoDeLavado**.
+* `iniciarLavado():` Indica por pantalla lo establecido en el **TipoDeLavado**.
  
-* `comenzarEnjuague():` Indicará por pantalla que el enjuague comenzó.
+* `comenzarEnjuague():` Indica por pantalla que el enjuague comenzó.
       
-* `centrifugar():` Indicara por pantalla que el enjuague terminó y que comenzara el ciclo de centrifugado indicado en el **TipoDeLavado**
+* `centrifugar():` Indica por pantalla que el enjuague terminó y que comenzara el ciclo de centrifugado indicado 
+en el **TipoDeLavado**. En caso de no tener centrifugado **no mostrará nada**.
 
 
 ### Tipos de lavado
 
 Cada tipo de lavado tendrá un **tiempo** y un **tipo de centrifugado** establecido a continuación:
 
-* `lavadoNormal():` Este lavado durará `30 minutos` y tendrá un ciclo de centrifugado `suave`.
+* `lavadoNormal():` Indica por pantalla `Iniciando ciclo de lavado Normal Duracion 30 minutos` y
+ tendrá un ciclo de centrifugado `suave`.
 
-* `lavadoRapido():` Este lavado durará `15 minutos` y será `sin centrifugado`.
+* `lavadoRapido():` Indica por paltalla `Iniciando ciclo de lavado Rapido Duracion 15 minutos` y será `sin centrifugado`.
 
-* `lavadoExremo():` Este lavado durará `45 minutos` y será `extremo`.
+* `lavadoExremo():` Indica por paltalla `Iniciando ciclo de lavado Rapido Duracion 45 minutos` y será `extremo`. 
+Este lavado a diferencia de los demas a mitad de ciclo va a `comenzarEnjuague()` y `prepararLavado()`. 
+Luego continua el ciclo normalmente.
 

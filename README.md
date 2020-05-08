@@ -32,7 +32,7 @@ Cada tipo de lavado tendrá un **tiempo** y un **tipo de centrifugado** establec
 
 * `lavadoRapido():` Indica por paltalla `Iniciando ciclo de lavado Rapido Duracion 15 minutos` y será `sin centrifugado`.
 
-* `lavadoExremo():` Indica por paltalla `Iniciando ciclo de lavado Rapido Duracion 45 minutos` y será `extremo`. 
+* `lavadoExremo():` Indica por paltalla `Iniciando ciclo de lavado Rapido Duracion 45 minutos` y será con centrifugado `extremo`. 
 Este lavado a diferencia de los demas a mitad de ciclo va a `comenzarEnjuague()` y `prepararLavado()`. 
 Luego continua el ciclo normalmente.
 

@@ -22,6 +22,8 @@ Todos los lavados cumplen con el siguiente ciclo:
 * `centrifugar():` Indica por pantalla que el enjuague terminó y que comenzara el ciclo de centrifugado indicado 
 en el **TipoDeLavado**. En caso de no tener centrifugado **no mostrará nada**.
 
+* Al finalizar debera mostrar en pantalla `Fin del lavado!`.
+
 
 ### Tipos de lavado
 

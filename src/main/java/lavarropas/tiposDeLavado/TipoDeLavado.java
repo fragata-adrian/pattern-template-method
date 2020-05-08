@@ -1,21 +1,20 @@
-package lavarropas;
+package lavarropas.tiposDeLavado;
 
-import lavarropas.tiposDeLavado.TipoDeLavado;
-
-public abstract class Lavado {
+public abstract class TipoDeLavado {
 
     public void lavar() {
         this.prepararLavado();
         this.iniciarLavado();
         this.comenzarEnjuague();
         this.centrifugar();
+        System.out.println("Fin del lavado!");
     }
 
-    private void prepararLavado() {
+    protected void prepararLavado() {
         System.out.println("Comenzando carga de agua..");
     }
 
-    private void comenzarEnjuague() {
+    protected void comenzarEnjuague() {
         System.out.println("Lavado terminado. Comenzando enjuague..");
     }
 
